@@ -1,0 +1,50 @@
+Reflections lesson 1
+Keep old versions of code and number them in sequence, oldest to newest.
+Save your versions frequently so as not to have too much code changes between files
+Use the FC OLD_FILE NEW_FILE to compare files and debug quickly.
+
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    It made it easy to identify the changes made amendments, deletions and additions
+    between the new and old versions
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    You would be able to track down at which point a chnge that you were interested 
+    in e.g. one related to a bug or feature was first introduced
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+   Manually committing means you can choose meaningful poimnts to commit, wuth
+   code that actually compiles and relates to atomised changes.  The downside
+   is that it requires you to be disciplined an remember to do it.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    Because GIT is designed for code and many apllications have code elements that 
+    are used across multiple files
+
+How can you use the commands git log and git diff to view the history of files?
+
+    You can use git log to view in descending order the details of each commit
+    which you can use to identify the versions you are interested in comparing.
+
+    You then can press q to quit the git log and then enter git diff followed
+    by the first four characters of the most recet version id a space abnd then
+    the first four characters of the previous versions id. 
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    Because you have a comple history of all files relating to your project
+    you can go back through them version by version to identify which version
+    introduced code that introduced a feature, or bug.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    Practice managing a project's files
