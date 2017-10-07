@@ -1,0 +1,51 @@
+What happens when you initialize a repository? Why do you need to do it?
+Git creates a hidden folder in your repository that stores meta-data about 
+the commits in the repsitory.  At this stage it does not make a commit.  
+Git will however keep track of the uncommited files that are in the 
+repository and you can chek these by running the command git status
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+The staging area is an intermediary between the working direvctory and the 
+git repository.  It enables you to place just those files from the working
+directory that you want to include in a commit by using git add and then you 
+can just commit them using git commit.
+
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+By adding the files you have made changes to that relate to the logical 
+change you have made.  You can tghen use git diff --staged to compare
+the chnges to the file sin the staged ared to their versions in the
+git repository.  If you are happy with the changes you can then use
+git committ to commit the changes.
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+Branches help when you want to try out an experimental feature and leave the master
+branch containing the master version.  You create a branch by using the command
+gi branch branch_name.  You can move between branches by typing 
+git checkout branch_name.  You can check which branch you are in and what other
+branches are available by typing git branch.
+
+How do the diagrams help you visualize the branch structure?
+The diagrams help you to visualise the entire project structure from the 
+initial commit through each of the various su-branches in a tree.  It also
+helps you to identify the parents of each commit and where branches share a
+common parent commit.  Finally if you are creating your brach diagram 
+along with your ecutal checkouts it will help you identify any
+unreachable commits, i.e. commits that have been made by checking out a parent
+of the current commit (resulting in the detached Head state message). 
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+git branch (shows what branch you are on)
+git merge main-branch sub-branch (eg. master coins) (merges the sub-branch into the master branch and makes that the ne master node)
+git show fileid (shows the diff between the fileid in the parameter to its parent
+git branch -d branch-name (deletes the labels on the branch-name commits)    
+
+What are the pros and cons of Git's automatic merging vs. always doing merges
+manually?
+GIT will automatically highlight if there is a conflict between the files being committed
+and you can then find these by opening the file and searchuing for the <<<< tag.
+From this you can find the commits form each branch and decide which to keep.
