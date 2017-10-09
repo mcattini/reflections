@@ -15,8 +15,8 @@ can just commit them using git commit.
 How can you use the staging area to make sure you have one commit per logical
 change?
 By adding the files you have made changes to that relate to the logical 
-change you have made.  You can tghen use git diff --staged to compare
-the chnges to the file sin the staged ared to their versions in the
+change you have made.  You can then use git diff --staged to compare
+the chnges to the files in the staged area to their versions in the
 git repository.  If you are happy with the changes you can then use
 git committ to commit the changes.
 
