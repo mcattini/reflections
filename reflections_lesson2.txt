@@ -33,7 +33,7 @@ The diagrams help you to visualise the entire project structure from the
 initial commit through each of the various su-branches in a tree.  It also
 helps you to identify the parents of each commit and where branches share a
 common parent commit.  Finally if you are creating your brach diagram 
-along with your ecutal checkouts it will help you identify any
+along with your acutal checkouts it will help you identify any
 unreachable commits, i.e. commits that have been made by checking out a parent
 of the current commit (resulting in the detached Head state message). 
 
